@@ -1,0 +1,30 @@
+<html>
+	<head></head>
+	<body>
+    	Number:<input type="number" name="limit" id="limit"/>
+       	<input type="submit" onClick="prime()"/>
+    	<br><br><br>
+    	<p id="op"></p>
+    
+		<script>
+			function prime(){
+            	
+                var lim=document.getElementById('limit').value;
+                var i;
+                var j;
+                var flag;
+                lim=parseInt(lim,10);
+       			
+                flag=1;
+                for(i=lim;i>0;i--){
+                
+                	flag=flag*i;
+                
+                }
+       			
+                document.getElementById("op").innerHTML = flag;
+               
+          	}
+		</script>
+	</body>
+</html>
